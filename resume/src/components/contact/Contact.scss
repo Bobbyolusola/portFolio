@@ -1,0 +1,110 @@
+@import "../../global.scss";
+
+.contact{
+  background-color: white;
+  display: flex;
+
+  @include mobile{
+    flex-direction: column;
+  }
+
+  .left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    @include mobile{
+      justify-content: center;
+    }
+
+
+    img{
+      height: 80%;
+    }
+  }
+
+  .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+      font-size: 30px;
+      color: #232423;
+
+      @include mobile{
+        margin: 5px 0;
+      }
+    }
+
+    span{
+      font-size: 14px;
+      line-height: 1.5;
+      color: #232423;
+      display: none;
+
+      @include mobile{
+        display: flex;
+        line-height: 1.5;
+        font-size: 13px;
+      }
+    }
+
+    form{
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input{
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+        border: 0.5px solid gray;
+
+        @include mobile{
+          width: 200px;
+          height: 20px;
+        }
+      }
+      textarea{
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+        border: 0.5px solid gray;
+
+        @include mobile{
+          width: 200px;
+          height: 100px;
+        }
+      }
+      button{
+        width: 300px;
+        height: 40px;
+        color: white;
+        background-color: #F64B74;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        @include mobile{
+          width: 205px;
+          height: 30px;
+        }
+      }
+      span{
+        color: #232423;
+
+        @include mobile{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+}
