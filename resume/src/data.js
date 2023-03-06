@@ -6,6 +6,7 @@ export const webPortfolio = [
         id: 1,
         title: "Admin App",
         img: "assets/w1.jpeg",
+        url: "https://cdn3.vectorstock.com/i/1000x1000/07/67/handshake-icon-digital-blue-vector-25730767.jpg",
     },
     {
         id: 2,
