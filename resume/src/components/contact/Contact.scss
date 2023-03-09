@@ -39,23 +39,34 @@
     span{
       font-size: 14px;
       line-height: 1.5;
+      gap: 5px;
       color: #232423;
       display: none;
+      text-decoration: none;
 
       @include mobile{
         display: flex;
         line-height: 1.5;
         font-size: 13px;
+
+        a{
+          color: #232423;
+        }
       }
     }
 
     form{
       width: 70%;
-      height: 70%;
+      height: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+
+      @include mobile{
+        width: 70%;
+        height: 60%;
+      }
 
       input{
         width: 300px;
@@ -80,7 +91,7 @@
         }
       }
       button{
-        width: 300px;
+        width: 305px;
         height: 40px;
         color: white;
         background-color: #F64B74;
@@ -99,6 +110,7 @@
 
         @include mobile{
           font-size: 13px;
+
         }
       }
     }

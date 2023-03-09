@@ -9,6 +9,7 @@ import {Works} from "./components/works/Works";
 import {Testimonials} from "./components/testimonials/Testimonials";
 import {Intro} from "./components/intro/Intro";
 import {Menu} from "./components/menu/Menu";
+import Header from "./components/header/Header";
 
 
 
@@ -18,8 +19,7 @@ function App() {
     return (
 
     <div className="App">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Header />
 
         <div className="sections">
             <Intro />

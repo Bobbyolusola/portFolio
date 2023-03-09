@@ -31,7 +31,7 @@ export function  Intro() {
                     <h3>A <span ref={textRef}></span></h3>
                     <p>
                         It is my passion to solve User problems with Design and Development.
-                        Outside my profession, I dance and work out.
+                        Outside my profession, I dance, play golf and work out.
                     </p>
                 </div>
                 <a href="#portfolio">

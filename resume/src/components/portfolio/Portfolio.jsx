@@ -16,10 +16,7 @@ export function  Portfolio() {
             id: "web",
             title: "Web Development",
         },
-        {
-            id: "animation",
-            title: "Animation Design",
-        },
+
         {
             id: "uxui",
             title: "UX/UI Design",
@@ -32,9 +29,7 @@ export function  Portfolio() {
             case "web":
                 setData(webPortfolio);
                 break;
-            case "animation":
-                setData(animatPortfolio);
-                break;
+
             case "uxui":
                 setData(uxuiPortfolio);
                 break;
@@ -61,7 +56,7 @@ export function  Portfolio() {
                     <div className="item">
                         <img src={data.img}
                              alt="" />
-                        <h3>{data.url ? <a href={data.url}>{data.title}</a> : data.title}</h3>
+                        <h3>{data.url ? <Link to={data.url}>{data.title}</Link> : data.title}</h3>
                     </div>
                 ))}
             </div>

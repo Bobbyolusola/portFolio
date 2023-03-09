@@ -1,4 +1,4 @@
-
+import {AppRoutes} from "./common/routes/AppRoutes";
 
 
 export const webPortfolio = [
@@ -6,7 +6,7 @@ export const webPortfolio = [
         id: 1,
         title: "Admin App",
         img: "assets/w1.jpeg",
-        url: "https://cdn3.vectorstock.com/i/1000x1000/07/67/handshake-icon-digital-blue-vector-25730767.jpg",
+        url: AppRoutes.DEV,
     },
     {
         id: 2,
@@ -33,17 +33,18 @@ export const webPortfolio = [
 export const animatPortfolio = [
     {
         id: 1,
-        title: "animated Web App",
-        img: "assets/animation_1.webp",
+        title: "Animated Web App",
+        img: "assets/ux_1.webp",
+        url: AppRoutes.ANIMATION,
     },
     {
         id: 2,
-        title: "Movie Animation",
+        title: "Movie Ux_1",
         img: "assets/animation_2.webp",
     },
     {
         id: 3,
-        title: "cartoon animation",
+        title: "Cartoon ux_1",
         img: "assets/animation_3.jpeg",
     },
 ];
@@ -53,6 +54,7 @@ export const  uxuiPortfolio = [
         id: 1,
         title: "Flower App",
         img: "assets/uxui_1.png",
+        url: AppRoutes.UX,
     },
     {
         id: 2,

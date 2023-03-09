@@ -17,9 +17,9 @@ export function  Contact() {
             </div>
             <div className="right">
                 <h2>Contact</h2>
-                <span><b>Phone:</b> +380633169509</span>
-                <span><b>Email:</b> contact@olusolaweb.com</span>
-                <span><b>Linkedin:</b><a href="https://www.linkedin.com/in/olusola-gbenga-adelabu-952620210/" target="_blank"> Olusolaweb</a></span>
+                <span><b>Phone: </b> +380633169509</span>
+                <span><b>Email: </b> contact@olusolaweb.com</span>
+                <span><a href="https://www.linkedin.com/in/olusola-gbenga-adelabu-952620210/" target="_blank"><b>Linkedin: </b> Olusolaweb</a></span>
                 <form action="" onSubmit={handleSubmit}>
                     <input type="text" placeholder="Email" />
                     <textarea placeholder="Message"></textarea>
