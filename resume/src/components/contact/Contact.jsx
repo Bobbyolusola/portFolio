@@ -1,14 +1,32 @@
 import "./Contact.scss"
-import {useState} from "react";
+import {useState, useRef} from "react";
+import emailjs from '@emailjs/browser'
 
 export function  Contact() {
 
     const [message, setMessage] = useState(false)
+    const [error, setError] = useState(false)
 
-    const handleSubmit = (e)=> {
-        e.preventDefault();
-        setMessage(true);
-    }
+    const form = useRef();
+
+    // const handleSubmit = (e)=> {
+    //     e.preventDefault();
+    //     // emailjs.init('aBjfc5O5oyXi2kAC4');
+    //     // emailjs.sendForm('service_lgxilrm','template_cid8lop',e.target)
+    //     setMessage(true);
+    // }
+
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            emailjs.sendForm('service_lgxilrm','template_cid8lop',form.current, 'aBjfc5O5oyXi2kAC4')
+                .then((message) => {
+                    setMessage(true);
+                }, (error) => {
+                    setError(true);
+                });
+            e.target.reset();
+        }
+
 
     return(
         <div className="contact" id="contact">
@@ -20,11 +38,16 @@ export function  Contact() {
                 <span><b>Phone: </b> +380633169509</span>
                 <span><b>Email: </b> contact@olusolaweb.com</span>
                 <span><a href="https://www.linkedin.com/in/olusola-gbenga-adelabu-952620210/" target="_blank"><b>Linkedin: </b> Olusolaweb</a></span>
-                <form action="" onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
+                <form action="" ref={form} onSubmit={handleSubmit}>
+                    <input type="text" name="name" placeholder="Name" />
+
+                    <input type="text" name="user_email" placeholder="Email" />
+
+                    <textarea  name="message" placeholder="Message"></textarea>
+
                     <button type="submit">Send</button>
                     {message && <span>Message sent. I will respond ASAP.</span>}
+                    {error && <span className='error'>Check your entered details.</span>}
                 </form>
             </div>
 

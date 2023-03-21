@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
 
+
     h2{
       font-size: 30px;
       color: #232423;
@@ -70,13 +71,15 @@
 
       input{
         width: 300px;
-        height: 30px;
+        height: 20px;
         font-size: 14px;
         border: 0.5px solid gray;
+        padding: 5px;
+
 
         @include mobile{
           width: 200px;
-          height: 20px;
+          height: 10px;
         }
       }
       textarea{
@@ -84,34 +87,39 @@
         height: 200px;
         font-size: 14px;
         border: 0.5px solid gray;
+        padding: 5px;
 
         @include mobile{
           width: 200px;
-          height: 100px;
+          height: 80px;
         }
       }
       button{
-        width: 305px;
+        width: 310px;
         height: 40px;
         color: white;
         background-color: #F64B74;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
         font-weight: 500;
         cursor: pointer;
 
+
         @include mobile{
-          width: 205px;
+          width: 210px;
           height: 30px;
         }
       }
-      span{
+      span {
         color: #232423;
 
         @include mobile{
           font-size: 13px;
 
         }
+      }
+      span.error{
+        color: red;
       }
     }
   }

@@ -46,6 +46,9 @@
                 width: 100%;
                 background-color: white;
                 overflow: hidden;
+                display: flex;
+                align-content: center;
+                justify-content: center;
                 //display: flex;
                 //align-content: center;
                 //justify-content: center;
@@ -53,8 +56,10 @@
 
                 img{
                     margin: 10px 20px;
-                    width: 400px;
+                    width: 350px;
+                    height: 150px;
                     transform: rotate(-10deg);
+
 
 
                     @include mobile{
@@ -164,10 +169,14 @@
                 //align-content: center;
                 //justify-content: center;
                 //transition: all 1s ease;
+                display: flex;
+                align-content: center;
+                justify-content: center;
 
                 img{
                     margin: 10px 20px;
-                    width: 350px;
+                    width: 380px;
+
                     //transform: rotate(-10deg);
 
 
