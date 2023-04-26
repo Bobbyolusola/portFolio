@@ -70,7 +70,7 @@
       }
 
       input{
-        width: 300px;
+        width: 60%;
         height: 20px;
         font-size: 14px;
         border: 0.5px solid gray;
@@ -83,7 +83,7 @@
         }
       }
       textarea{
-        width: 300px;
+        width: 60%;
         height: 200px;
         font-size: 14px;
         border: 0.5px solid gray;
@@ -95,7 +95,7 @@
         }
       }
       button{
-        width: 310px;
+        width: 62.5%;
         height: 40px;
         color: white;
         background-color: #F64B74;
@@ -110,7 +110,7 @@
           height: 30px;
         }
       }
-      span {
+      p {
         color: #232423;
 
         @include mobile{
@@ -118,9 +118,7 @@
 
         }
       }
-      span.error{
-        color: red;
-      }
+
     }
   }
 

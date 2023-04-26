@@ -1,13 +1,13 @@
-import "./Webdev_1.scss";
+import "./Webdev_4.scss";
 import Header from "../header/Header";
 
-const Webdev_2 = () => {
+const Webdev_4 = () => {
   return (
     <>
       <Header />
 
       <div className="container">
-        <h1>Admin App </h1>
+        <h1>CHAT APP </h1>
         <p>
           <b>NOTE : </b> Kindly find the login details to access the admin App
           is the last paragraph of this page.
@@ -45,4 +45,4 @@ const Webdev_2 = () => {
   );
 };
 
-export default Webdev_2;
+export default Webdev_4;

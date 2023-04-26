@@ -1,4 +1,4 @@
-import "./Webdev_1.scss";
+import "./Webdev_2.scss";
 import Header from "../header/Header";
 
 const Webdev_2 = () => {
@@ -7,7 +7,7 @@ const Webdev_2 = () => {
       <Header />
 
       <div className="container">
-        <h1>Admin App </h1>
+        <h1>Ecommerce App </h1>
         <p>
           <b>NOTE : </b> Kindly find the login details to access the admin App
           is the last paragraph of this page.

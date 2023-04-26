@@ -9,18 +9,19 @@
     align-items: center;
   }
 
+
   .left{
       flex: 0.5;
        overflow: hidden;
 
 
     .imgContainer{
-      width:850px;
-      height: 850px;
+      width:950px;
+      height: 950px;
       background-color: #F64B74;
-      border-radius: 70%;
+      border-radius: 80%;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
       float: right;
 
@@ -28,8 +29,9 @@
         align-items: flex-start;
       }
 
+
       img{
-        height: 90%;
+        height: 85%;
         border-radius: 50%;
 
         @include mobile{
@@ -39,7 +41,7 @@
     }
   }
   .right{
-      flex: 0.5;
+    flex: 0.5;
     display: relative;
 
     .wrapper{
@@ -49,6 +51,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
 
       @include mobile{
         padding-left: 0;
@@ -63,12 +66,14 @@
           font-size: 30px;
           overflow: hidden;
         }
+
+
       }
       h2{
         font-style: 35px;
 
         @include mobile{
-          font-size: 30px;
+          font-size: 25px;
         }
 
       }
@@ -110,6 +115,7 @@
 
         @include mobile {
           margin-top: 10px;
+          width: 70%;
         }
 
       }

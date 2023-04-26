@@ -20,11 +20,18 @@ export function  Contact() {
             e.preventDefault();
             emailjs.sendForm('service_lgxilrm','template_cid8lop',form.current, 'aBjfc5O5oyXi2kAC4')
                 .then((message) => {
-                    setMessage(true);
+                    // console.log(message);
+                    message?.status === 200 && showSuccess();
                 }, (error) => {
+                    // console.log(error);
                     setError(true);
                 });
             e.target.reset();
+        }
+
+        const showSuccess = () => {
+            setMessage(true);
+            setTimeout( ()=> setMessage(false), 3000)
         }
 
 
@@ -39,15 +46,14 @@ export function  Contact() {
                 <span><b>Email: </b> contact@olusolaweb.com</span>
                 <span><a href="https://www.linkedin.com/in/olusola-gbenga-adelabu-952620210/" target="_blank"><b>Linkedin: </b> Olusolaweb</a></span>
                 <form action="" ref={form} onSubmit={handleSubmit}>
-                    <input type="text" name="name" placeholder="Name" />
+                    <input required type="text" name="name" placeholder="Name" />
 
-                    <input type="text" name="user_email" placeholder="Email" />
+                    <input required type="email" name="user_email" placeholder="Email" />
 
-                    <textarea  name="message" placeholder="Message"></textarea>
+                    <textarea  required name="message" placeholder="Message"></textarea>
 
                     <button type="submit">Send</button>
-                    {message && <span>Message sent. I will respond ASAP.</span>}
-                    {error && <span className='error'>Check your entered details.</span>}
+                    {message && <p>Message sent. I will respond ASAP.</p>}
                 </form>
             </div>
 

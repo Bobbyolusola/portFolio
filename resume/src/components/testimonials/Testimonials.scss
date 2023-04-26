@@ -23,7 +23,7 @@
 
   .container{
     width: 100%;
-    height: 150%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +32,7 @@
     @include mobile{
       flex-direction: column;
       height: 100%;
+      margin-top: 50px;
     }
 
     .card{
@@ -84,7 +85,7 @@
             height: 25px;
 
             @include mobile{
-              display: none;
+              height: 15px;
             }
           }
           &.user{
@@ -95,7 +96,8 @@
             margin: 0 30px;
 
             @include mobile{
-              display: none;
+             width: 30px;
+              height: 30px;
             }
           }
         }
