@@ -12,8 +12,8 @@ export function Intro() {
       backDelay: 2000,
       backSpeed: 60,
       strings: [
-        "Front-end developer & Designer.",
-        " Front-end developer & Designer.",
+        "Front-End Developer & Designer.",
+        " Front-End Developer & Designer.",
       ],
     });
   }, []);
@@ -22,7 +22,8 @@ export function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/image.jpg" alt="" />
+          {/*<img src="assets/bbImage.jpg" alt="" />*/}
+          <img src="assets/newProfileImg2.JPG" alt="" />
         </div>
       </div>
       <div className="right">
@@ -33,8 +34,9 @@ export function Intro() {
             A <span ref={textRef}></span>
           </h3>
           <p>
-            It is my passion to solve User problems with Design and Development.
-            Outside my profession, I dance, play golf and work out.
+            I am passionate about solving user problems through development and
+            design. Outside of my profession, I enjoy dancing Kizomba/Urbankizz,
+            working out in the gym, and playing golf.
           </p>
         </div>
         <a href="#portfolio">

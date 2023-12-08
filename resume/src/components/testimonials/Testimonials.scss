@@ -18,6 +18,8 @@
       font-size: 20px;
       overflow: hidden;
       height: 30px;
+      margin-top: 50px;
+      color: white;
     }
   }
 
@@ -78,6 +80,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mobile{
+          overflow: hidden;
+        }
 
 
         img{

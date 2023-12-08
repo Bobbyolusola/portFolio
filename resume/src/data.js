@@ -9,63 +9,60 @@ export const webPortfolio = [
   },
   {
     id: 2,
-    title: "E-commerce App",
-    img: "assets/w2.webp",
-    url: AppRoutes.DEV2,
-  },
-  // {
-  //     id: 2,
-  //     title: "API app",
-  //     img: "assets/w3.jpeg",
-  // },
-  {
-    id: 3,
     title: "Game App",
-    img: "assets/w4.jpeg",
+    img: "assets/game.jpeg",
     url: AppRoutes.DEV3,
   },
+  // {
+  //   id: 3,
+  //   title: "E-commerce App",
+  //   img: "assets/w2.webp",
+  //   url: AppRoutes.DEV2,
+  // },
   {
     id: 4,
     title: "Chat App",
-    img: "assets/w5.webp",
-    url: AppRoutes.DEV3,
+    img: "assets/chat.jpeg",
+    url: AppRoutes.DEV4,
   },
 ];
 
-export const animatPortfolio = [
+// export const animatPortfolio = [
+//   {
+//     id: 1,
+//     title: "Animated Web App",
+//     img: "assets/ux_1.webp",
+//     url: AppRoutes.ANIMATION,
+//   },
+//   {
+//     id: 2,
+//     title: "Movie Ux_1",
+//     img: "assets/animation_2.webp",
+//   },
+//   {
+//     id: 3,
+//     title: "Cartoon ux_1",
+//     img: "assets/animation_3.jpeg",
+//   },
+// ];
+
+export const designPortfolio = [
   {
     id: 1,
-    title: "Animated Web App",
-    img: "assets/ux_1.webp",
-    url: AppRoutes.ANIMATION,
+    title: "Website design",
+    img: "assets/team.jpeg",
+    url: AppRoutes.DESIGN,
   },
   {
     id: 2,
-    title: "Movie Ux_1",
-    img: "assets/animation_2.webp",
+    title: "UX/UI Mobile App",
+    img: "assets/main.jpeg",
+    url: AppRoutes.DAILY,
   },
   {
     id: 3,
-    title: "Cartoon ux_1",
-    img: "assets/animation_3.jpeg",
-  },
-];
-
-export const uxuiPortfolio = [
-  {
-    id: 1,
-    title: "Flower App",
-    img: "assets/uxui_1.png",
-    url: AppRoutes.UX,
-  },
-  {
-    id: 2,
-    title: "Social Media App",
+    title: "UX/UI Landing page",
     img: "assets/usui-2.jpeg",
-  },
-  {
-    id: 3,
-    title: "Landing pages",
-    img: "assets/uxui_3.webp",
+    url: AppRoutes.LANDING,
   },
 ];

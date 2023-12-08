@@ -33,7 +33,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
 
           <div className="itemContainer">
             <Person />
-            <span>+380 633 169 509</span>
+            <span>+1 604 753 7715</span>
           </div>
           <div className="itemContainer">
             <Mail />
@@ -42,12 +42,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <LinkedIn />
             <span>
-              <a
-                href="https://www.linkedin.com/in/olusola-gbenga-adelabu-952620210/"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/olusolaweb" target="_blank">
                 {" "}
-                olusolaweb@LinkedIn.com
+                linkedin.com/in/olusolaweb
               </a>
             </span>
           </div>

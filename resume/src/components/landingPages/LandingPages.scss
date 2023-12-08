@@ -1,0 +1,34 @@
+@import "../../global.scss";
+
+.landingContainer {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+
+    @include mobile{
+        align-items: center;
+    }
+
+
+    .box_Img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            width: 90%;
+            margin-bottom: 40px;
+
+            @include mobile{
+                margin-bottom: 30px;
+            }
+        }
+
+        @include mobile{
+            width: 80%;
+            padding-top: 20px;
+        }
+    }
+}

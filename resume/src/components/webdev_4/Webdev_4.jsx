@@ -6,39 +6,53 @@ const Webdev_4 = () => {
     <>
       <Header />
 
-      <div className="container">
+      <div className="chatContainer">
         <h1>CHAT APP </h1>
         <p>
-          <b>NOTE : </b> Kindly find the login details to access the admin App
-          is the last paragraph of this page.
+          <b>NOTE : </b> Kindly signup and login to access this chat Application
+          on different browsers, therefore, it will be a chat between two
+          created users to see how the app functions. Also, for further
+          explanation on the function of this chat app, kindly reach out either
+          via Phone, email, linkedin or the contact form.
         </p>
         <div className="box_Img">
-          <a href="https://www.w3schools.com" target="_blank">
-            <img src="assets/admin.jpeg" alt="admin" />
+          <a href="https://imessage.olusolaweb.com" target="_blank">
+            <img src="assets/chat.jpeg" alt="admin" />
           </a>
+          <br />
+          <br />
 
-          <a href="https://www.w3schools.com" target="_blank">
+          <a href="https://imessage.olusolaweb.com" target="_blank">
             Click here to see the website
           </a>
         </div>
         <div className="info">
           <h3>About App</h3>
           <p>
-            This admin App keeps track, manage data's in connection with the
-            database, and simplifies the handling and storage of data for the
-            application.
+            This website and mobile responsive Chat App is developed and
+            connected to Firebase Database. This Firebase Database is where
+            chats and user informations are stored. It demonstrates how two
+            people can communicate with messages between themselves from one
+            ends to another. Also, message history and user details are stored
+            in the database.
+          </p>
+          <h3>Functionalities</h3>
+          <p>
+            <b>1.</b> Different users can Signup on different browsers and
+            login.
+          </p>
+          <p>
+            <b>2.</b> User can search one another with the 'display name'.
+          </p>
+          <p>
+            <b>3.</b> User can send a message to each other and it will be
+            delivered and received instantly.
+          </p>
+          <p>
+            <b>4.</b> User can attach an image to send to one another.
           </p>
 
-          <h3>Functionalities</h3>
-          <p>1. Adding, viewing, deleting and editing a user profile</p>
-          <p>2. Viewing and editing the Admin profile</p>
-          <p>3. Searching for users</p>
-          <p>4. Deleting of products and Deliveries</p>
-          <p>5. Changing of App theme from light to dark color</p>
-
-          <h3>Access Codes</h3>
-          <p>Login Username: admin@rollytex.com</p>
-          <p>Login Password: 123456</p>
+          <br />
         </div>
       </div>
     </>

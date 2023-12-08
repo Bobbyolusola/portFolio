@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+.dailyContainer {
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    h1{
+        @include mobile{
+            font-size: 18px;
+            margin-right: 50px;
+        }
+    }
+    p{
+        @include mobile{
+            margin-right: 50px;
+        }
+    }
+    .img1{
+        object-fit: cover;
+        @include mobile{
+            width: 80%;
+            margin-right: 50px;
+        }
+    }
+
+    .box_Img{
+        .img2{
+            object-fit: cover;
+            @include mobile{
+                width: 95%;
+            }
+        }
+    }
+}

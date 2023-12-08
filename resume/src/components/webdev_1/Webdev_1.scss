@@ -1,8 +1,20 @@
-.container{
-    margin: 100px 100px;
+@import "../../global.scss";
+
+.adminContainer{
+    margin: 100px 70px;
+    width: 82vw;
+
+    @include mobile{
+        margin: 70px 10px;
+        width: 100vw;
+
+    }
     p{
-        margin: 20px 0;
+        margin: 20px 5px;
         color: blue;
+        font-size: 15px;
+        width: 85%;
+        line-height: 1.5;
 
         b{
             color: black;
@@ -10,20 +22,25 @@
     }
 
     .box_Img{
-        width: 65%;
-        height: 60%;
+        width: 90%;
+        height: 70%;
         object-fit: cover;
-        margin: 20px 20px;
+        margin: 20px 5px;
+
+
         img{
-            width: 100%;
+            width: 90%;
+            border-radius: 10px;
+
         }
     }
     .info{
-        width: 65%;
-        height: 500px;
+        width: 85%;
+        height: 700px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
 
         h3{
             margin: 20px 5px 5px;
@@ -31,6 +48,7 @@
         p{
             margin: 5px 5px;
             color: #393a3f;
+            overflow: hidden;
         }
     }
 }
