@@ -18,10 +18,10 @@
 
 
     .imgContainer{
-      width:950px;
+      width: 950px;
       height: 950px;
-      background-color: #F64B74;
-      border-radius: 80%;
+      //background-color: #F64B74;
+      border-radius: 90%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -34,9 +34,9 @@
       }
 
       img{
-        height: 85%;
+        height: 80%;
         border-radius: 50%;
-        margin-top: 70px;
+        margin-top: 50px;
 
         @include mobile{
           height: 37%;
